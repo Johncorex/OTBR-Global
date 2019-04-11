@@ -143,6 +143,6 @@ startupDatabaseOptimization = true
 
 -- Status server information
 ownerName = "OTBR-Global"
-ownerEmail = ""
+ownerEmail = "otbr@gmail.com"
 url = "http://www.facebook.com/otbr"
 location = "Brasil"
