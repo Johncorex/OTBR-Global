@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deathling Scout" nameDescription="a deathling scout" race="undead" experience="6300" speed="250" manacost="0">
+	<health now="7200" max="7200" />
+	<look type="441" corpse="15175" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag passive="0" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonpoison="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-200" />
+		<attack name="physical" interval="1000" chance="15" range="7" min="0" max="-180">
+			<attribute key="shootEffect" value="snowball" />
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="energy" interval="1000" chance="12" length="3" spread="3" min="0" max="-175">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+	</attacks>
+	<defenses armor="72" defense="33" />
+	<elements> 
+		<element physicalPercent="0" />
+		<element earthPercent="-30" />
+		<element energyPercent="-30" />
+		<element holyPercent="0" />
+		<element deathPercent="70" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity ice="1" />
+		<immunity invisible="1" />
+		<immunity paralyze="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="UBOX!" />
+		<voice sentence="O(J-LJ-T =" />
+	</voices>
+	<loot>
+		<item name="snowball" countmax="22" chance="10000" />
+		<item name="gold coin" countmax="60" chance="100000" />
+		<item name="gold coin" countmax="40" chance="100000" />
+		<item name="bunnyslippers" chance="1333" />
+		<item name="meat" countmax="4" chance="33333" />
+		<item name="ham" countmax="5" chance="10000" />
+	</loot>
+</monster>

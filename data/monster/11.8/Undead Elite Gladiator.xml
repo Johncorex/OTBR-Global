@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Undead Elite Gladiator" nameDescription="undead elite gladiator" race="undead" experience="7900" speed="150" manacost="0">
+	<health now="8000" max="8000" />
+	<look type="306" corpse="9823" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1200" min="-200" max="-500" />
+		<attack name="physical" interval="1400" chance="15" range="7" min="-400" max="-520">
+			<attribute key="shootEffect" value="throwingknife" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" radius="3" target="0" min="-120" max="-370">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="85" defense="33" />
+	<elements>
+		<element icePercent="1" />
+		<element earthPercent="-10" />
+		<element firePercent="20" />
+		<element energyPercent="50" />
+		<element physicalPercent="25" />
+		<element deathPercent="-10" />
+		<element holyPercent="50" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity death="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="2152" countmax="40" chance="100000"/><!-- platinum coin -->
+		<item id="8872" chance="24000"/> <!-- Belted Cape -->
+		<item id="2399" countmax="18" chance="16000"/><!-- Throwing Star -->
+		<item id="2419" chance="11000"/> <!-- Scimitar -->
+		<item id="2430" chance="8000"/> <!-- Knight Axe -->
+		<item id="8473" chance="7000"/> <!-- Ultimate Health Potion -->
+		<item id="2647" chance="5900"/> <!-- Plate Legs -->
+		<item id="3965" chance="5900"/> <!-- Hunting Spear -->
+		<item id="5885" chance="5900"/> <!-- Flask of Warrior's Sweat -->
+		<item id="7591" chance="4750"/> <!-- Great Health Potion -->
+		<item id="10573" chance="4750"/> <!-- Broken Gladiator Shield -->
+		<item id="2200" chance="2200"/> <!-- Protection Amulet -->
+		<item id="2377" chance="2260"/> <!-- Two Handed Sword -->
+		<item id="2463" chance="1970"/> <!-- Plate Armor -->
+		<item id="2490" chance="1610"/> <!-- Dark Helmet -->
+		<item id="2165" chance="950"/> <!-- Stealth Ring -->
+		<item id="2497" chance="170"/> <!-- Crusader Helmet -->
+		<item id="7383" chance="160"/> <!-- Relic Sword -->
+	</loot>
+</monster>
